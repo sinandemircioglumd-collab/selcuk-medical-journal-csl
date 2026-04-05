@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text" default-locale="en-US" page-range-format="minimal-two">
+  <info>
+    <title>Selcuk Medical Journal</title>
+    <id>http://www.zotero.org/styles/selcuk-medical-journal</id>
+    <link href="http://www.zotero.org/styles/selcuk-medical-journal" rel="self"/>
+    <category citation-format="numeric"/>
+    <updated>2026-04-05T10:00:00+03:00</updated>
+  </info>
+
+  <macro name="author">
+    <names variable="author" et-al-min="4" et-al-use-first="3" delimiter=", ">
+      <name initialize-with="" name-as-sort-order="all"/>
+      <et-al/>
+    </names>
+  </macro>
+
+  <citation>
+    <layout prefix="(" suffix=")">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+
+  <bibliography>
+    <layout suffix=".">
+      <text variable="citation-number" suffix=" "/>
+      <text macro="author" suffix=". "/>
+      <text variable="title" suffix=". "/>
+      <text variable="container-title" form="short" suffix=". "/>
+      <date variable="issued">
+        <date-part name="year"/>
+      </date>
+      <text value=";"/>
+      <text variable="volume"/>
+      <group prefix="(" suffix=")">
+        <text variable="issue"/>
+      </group>
+      <text value=":"/>
+      <text variable="page"/>
+    </layout>
+  </bibliography>
+</style>
